@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechForward Summit Registration</title>
+  <style>
+    form {
+      width: 500px;
+      height: 330px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TechForward Summit 2025</h1>
+    <p>A practical tech event for developers, data enthusiasts, and product innovators.</p>
+  </header>
+
+  <section>
+    <h2>Why Attend?</h2>
+    <ul>
+      <li>Workshops on Machine Learning and Cloud Computing</li>
+      <li>Talks from local tech leaders</li>
+      <li>Networking opportunities</li>
+    </ul>
+
+    <h2>Event Schedule</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Session</th>
+          <th>Location</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>09:00 - 10:00</td>
+          <td>Opening Keynote</td>
+          <td>Main Hall</td>
+        </tr>
+        <tr>
+          <td>10:15 - 12:30</td>
+          <td>Workshop: Intro to ML</td>
+          <td>Room 1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Invite</h2>
+    <img src="Tech.jpeg" alt="Tech event photo" width="500" height="500">
+
+    <h2>Event Video</h2>
+    <video controls width="400" autoplay>
+      <source src="Tech2025.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Register Now</h2>
+    <form action="https://formsubmit.co/nungarimiriam@gmail.com" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+?[0-9]{7,15}$" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Event Details</legend>
+        <label for="ticket">Ticket Type:</label>
+        <select id="ticket" name="ticket" required>
+          <option value="">Select...</option>
+          <option value="standard">Standard</option>
+          <option value="student">Student</option>
+        </select><br><br>
+
+        <label>Workshops:</label><br>
+        <input type="checkbox" id="ml" name="workshop" value="ml">
+        <label for="ml">ML on the Cloud</label><br>
+        <input type="checkbox" id="web" name="workshop" value="web">
+        <label for="web">Accessible Web Apps</label><br><br>
+      </fieldset>
+
+      <input type="submit" value="Submit Registration">
+    </form>
+  </section>
+</body>
+</html>
